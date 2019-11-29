@@ -26,23 +26,26 @@
 # SETUP - to use this program, put it in a directory (via git clone or just  #
 # copy paste it as a file and chmod it as an exe). Then you can cd to that   #
 # directory and do sudo ./cleansys (or whatever you named it). To use it as  #
-# a bin command, go to the directory you have it in and do                   #         
+# a bash command, go to the directory you have it in and do                   #
 # sudo cp cleansys /usr/bin/. If it does not work, google it, then try       #
 # turning it off and back on.                                                #
 ##############################################################################
 
 if [ "$EUID" -ne 0 ] # checks for root, exits if not root.
-  then echo "Run this as root (sudo)"
+  then echo -e "\e[1m\e[31mRun this as root (sudo)"
   exit
 fi
-  echo "Starting system maintenance, its a good idea to reboot after this is done"
-  sleep 2
+  echo -e "\e[1m\e[32mStarting system maintenance, its a good idea to reboot after this is done"
+  printf "\e[39m\e[21m\nCopyright (C) 2019 Gizmoz.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
+  sleep 4 # allows you to read the above
 # autoruns all these commands
   apt-get update --force-yes # updates the apt repos
   apt-get upgrade --force-yes # installs any updates to the apt repos
   apt-get autoclean --force-yes # cleans files that are no longer needed
   apt-get autoremove --force-yes # cleans file dependencies that are no longer needed
-  echo "Cleansys is done, reboot now? [Y/N]"
+  echo -e "\e[1m\e[32mCleansys is done, reboot now? [Y/\e[31mN\e[32m]\e[39m\e[21m"
   read yesno
   if [ $yesno == "Y" ];
   then
