@@ -2,8 +2,8 @@
 ##################################################################################
 # CLEANSYS - THE STUPID SYSTEM MAINTENANCE SCRIPT                                #
 #                                                                                #
-# Copyright (C) 2019 Gizmoz                                                      #
-#                               ]                                                #
+# Copyright (C) 2019 Chase Struck                                                #
+#                                                                                #
 # cleansys: Runs helpful system maintenance commands all in one script!          #
 # (for DEBIAN-BASED (apt) systems ONLY)                                          #
 #                                                                                #
@@ -28,7 +28,7 @@
 # 3. use chmod to make it an execuable [sudo chmod +x cleansys.sh]               #
 # 	a. you can use the mv command here to remove the .sh if you wish         #
 # 4. run it as root [sudo ./cleansys.sh]                                         #
-# HOW TO MAKE IT A BASH COMMAND                                                 #
+# HOW TO MAKE IT A BASH COMMAND                                                  #
 # 1. run steps above                                                             #
 # 2. run [sudo cp cleansys /usr/bin/                                             #
 # 3. cd to home [cd]                                                             #
