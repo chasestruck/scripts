@@ -3,7 +3,7 @@
 ## DEPENDENCIES:
 ## Oh-My-Zsh <https://github.com/ohmyzsh/ohmyzsh>
 ## Powerlevel9k <https://github.com/Powerlevel9k/powerlevel9k>
-## awsome-terminal-fonts <https://github.com/gabrielelana/awesome-terminal-fonts>
+## awesome-terminal-fonts <https://github.com/gabrielelana/awesome-terminal-fonts>
 
 # Fix colors
 export TERM="xterm-256color"
