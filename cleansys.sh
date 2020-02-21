@@ -2,7 +2,7 @@
 ##################################################################################
 # CLEANSYS - THE STUPID SYSTEM MAINTENANCE SCRIPT                                #
 #                                                                                #
-# Copyright (C) 2019 Chase Struck                                                #
+# Copyright (C) 2020 M. Fox                                                      #
 #                                                                                #
 # cleansys: Runs helpful system maintenance commands all in one script!          #
 # (for DEBIAN-BASED (apt) systems ONLY)                                          #
@@ -22,17 +22,15 @@
 ##################################################################################
 
 ##################################################################################
-# SETUP: {if you have done this stuff before, skip this becuase its really easy} #
-# 1. Put the repo into a local directory (via git clone or pasting in the file)  #
-# 2. cd to the new directory [cd ~/my_cleansys_dir]                              #
-# 3. use chmod to make it an execuable [sudo chmod +x cleansys.sh]               #
-# 	a. you can use the mv command here to remove the .sh if you wish         #
-# 4. run it as root [sudo ./cleansys.sh]                                         #
-# HOW TO MAKE IT A BASH COMMAND                                                  #
-# 1. run steps above                                                             #
-# 2. run [sudo cp cleansys /usr/bin/                                             #
-# 3. cd to home [cd]                                                             #
-# 4. run [sudo cleansys]                                                         #
+# SETUP:                                                                         #
+# 1. Clone repo                                                                  #                            
+# 3. Make cleansys.sh and executable file (sudo chmod +x cleansys.sh)            #
+# 4. run 'sudo ./cleansys.sh'                                                    #
+#                                                                                #
+# If you would like to use this as a global command:                             #
+# 1. run 'mv cleansys.sh cleansys' (or any other name at your option)            #
+# 2. run 'sudo cp cleansys /usr/bin/cleansys'                                    #
+# 3. now, running 'cleansys' anywere will work                                   #
 ##################################################################################
 
 if [ "$EUID" -ne 0 ] # checks for root, exits if not root.
