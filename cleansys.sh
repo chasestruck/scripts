@@ -1,4 +1,5 @@
 #!/bin/bash
+# 21-2-2020 -- I made some updates to the script but cannot test it yet, script may be broken for a about a day (unlikely)
 ##################################################################################
 # CLEANSYS - THE STUPID SYSTEM MAINTENANCE SCRIPT                                #
 #                                                                                #
@@ -38,19 +39,14 @@ if [ "$EUID" -ne 0 ] # checks for root, exits if not root.
   exit
 fi
   echo -e "\e[1m\e[32mStarting system maintenance, its a good idea to reboot after this is done"
-  printf "\e[39m\e[21m\nCopyright (C) 2019 Gizmoz.
-This is free software; see the source for copying conditions.  There is NO
-warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
+  printf "\e[39m\e[21m\n This is free software; see the source for copying conditions.  There is NO
+  warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
   sleep 4 # allows you to read the above
-# autoruns all these commands
+  
+  # autoruns all these commands
   apt-get update --force-yes # updates the apt repos
   apt-get upgrade --force-yes # installs any updates to the apt repos
   apt-get autoclean --force-yes # cleans files that are no longer needed
   apt-get autoremove --force-yes # cleans file dependencies that are no longer needed
-  echo -e "\e[1m\e[32mCleansys is done, reboot now? [Y/\e[31mN\e[32m]\e[39m\e[21m"
-  read yesno
-  if [ $yesno == "Y" ];
-  then
-	reboot # reboots system
-  fi
-    exit
+  echo -e "\e[1m\e[32mCleansys is done, you may now go about your work"
+  exit
