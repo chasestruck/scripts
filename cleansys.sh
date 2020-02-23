@@ -42,9 +42,9 @@ fi
   sleep 2 # allows you to read the above
   
   # autoruns all these commands
-  apt-get update --force-yes # updates the apt repos
-  apt-get upgrade --force-yes # installs any updates to the apt repos
-  apt-get autoclean --force-yes # cleans files that are no longer needed
-  apt-get autoremove --force-yes # cleans file dependencies that are no longer needed
+  yes | apt-get update # updates the apt repos
+  yes | apt-get upgrade # installs any updates to the apt repos
+  yes | apt-get autoclean # cleans files that are no longer needed
+  yes | apt-get autoremove # cleans file dependencies that are no longer needed
   echo -e "\e[1m\e[32mCleansys is done, you may now go about your work"
   exit
