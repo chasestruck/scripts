@@ -34,7 +34,7 @@
 ##################################################################################
 
 if [ "$EUID" -ne 0 ] # checks for root, exits if not root.
-  then echo -e "\e[1m\e[31mRun this as root (sudo)"
+  then echo -e "\e[1m\e[31mCleansys does not have a ability to run 'sudo'. Make sure you are root and run again"
   exit
 fi
   echo -e "\e[1m\e[32mStarting system maintenance, its a good idea to reboot after this is done"
