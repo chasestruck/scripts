@@ -1,5 +1,4 @@
 #!/bin/bash
-# 21-2-2020 -- I made some updates to the script but cannot test it yet, script may be broken for a about a day (unlikely)
 ##################################################################################
 # CLEANSYS - THE STUPID SYSTEM MAINTENANCE SCRIPT                                #
 #                                                                                #
@@ -39,9 +38,8 @@ if [ "$EUID" -ne 0 ] # checks for root, exits if not root.
   exit
 fi
   echo -e "\e[1m\e[32mStarting system maintenance, its a good idea to reboot after this is done"
-  printf "\e[39m\e[21m\n This is free software; see the source for copying conditions.  There is NO
-  warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
-  sleep 4 # allows you to read the above
+  echo -e "\e[39m"
+  sleep 2 # allows you to read the above
   
   # autoruns all these commands
   apt-get update --force-yes # updates the apt repos
