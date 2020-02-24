@@ -1,37 +1,24 @@
 #!/bin/bash
-##################################################################################
-# CLEANSYS - THE STUPID SYSTEM MAINTENANCE SCRIPT                                #
-#                                                                                #
-# Copyright (C) 2020 Chase Struck                                                #
-#                                                                                #
-# cleansys: Runs helpful system maintenance commands all in one script!          #
-# (for DEBIAN-BASED (apt) systems ONLY)                                          #
-#                                                                                #
-# This program is free software: you can redistribute it and/or modify           #
-# it under the terms of the GNU General Public License as published by           #
-# the Free Software Foundation, either version 3 of the License, or              #
-# (at your option) any later version.                                            #
-#	                                                                         #
-# This program is distributed in the hope that it will be useful,                #
-# but WITHOUT ANY WARRANTY; without even the implied warranty of                 #
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the                  #
-# GNU General Public License for more details.                                   #
-#	                                                                         #
-# You should have received a copy of the GNU General Public License              #
-# along with this program. If not, see <http://www.gnu.org/licenses/>.           #
-##################################################################################
 
-##################################################################################
-# SETUP:                                                                         #
-# 1. Clone repo                                                                  #                            
-# 3. Make cleansys.sh and executable file (sudo chmod +x cleansys.sh)            #
-# 4. run 'sudo ./cleansys.sh'                                                    #
-#                                                                                #
-# If you would like to use this as a global command:                             #
-# 1. run 'mv cleansys.sh cleansys' (or any other name at your option)            #
-# 2. run 'sudo cp cleansys /usr/bin/cleansys'                                    #
-# 3. now, running 'cleansys' anywere will work                                   #
-##################################################################################
+
+# Cleansys -- The all-in-one system update command (becuase debian's way is too hard)                                        
+# Copyright (C) 2020 Chase Struck
+
+# Treat this file as free software; you may inspect, change, distribute and even resell this program
+# provided that both the above Copyright notice and this notice are preserved.
+# Hovever, this file is provided "as is" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.  
+
+# Important -- This script only works on distros that use apt (generally only debian-baced systems)
+
+# SETUP:                                                                         
+# 1. Clone repo                                                                                              
+# 2. Make cleansys.sh and executable file (sudo chmod +x cleansys.sh)            
+# 3. run 'sudo ./cleansys.sh'                                                    
+#                                                                                
+# If you would like to use this as a global command:                             
+# 1. run 'mv cleansys.sh cleansys' (or any other name at your option)            
+# 2. run 'sudo cp cleansys /usr/bin/cleansys'                                    
+# 3. now, running 'cleansys' anywere will work                                   
 
 if [ "$EUID" -ne 0 ] # checks for root, exits if not root.
   then echo -e "\e[1m\e[31mCleansys does not have a ability to run 'sudo'. Make sure you are root and run again"
