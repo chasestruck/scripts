@@ -2,7 +2,7 @@
 ##################################################################################
 # CLEANSYS - THE STUPID SYSTEM MAINTENANCE SCRIPT                                #
 #                                                                                #
-# Copyright (C) 2020 M. Fox                                                      #
+# Copyright (C) 2020 Chase Struck                                                #
 #                                                                                #
 # cleansys: Runs helpful system maintenance commands all in one script!          #
 # (for DEBIAN-BASED (apt) systems ONLY)                                          #
