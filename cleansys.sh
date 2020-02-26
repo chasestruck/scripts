@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 # Cleansys -- The all-in-one system update command (becuase debian's way is too hard)                                        
 # Copyright (C) 2020 Chase Struck
 
@@ -8,7 +7,7 @@
 # provided that both the above Copyright notice and this notice are preserved.
 # Hovever, this file is provided "as is" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.  
 
-# Important -- This script only works on distros that use apt (generally only debian-baced systems)
+# Important -- This script only works on distros that use apt (generally only debian-based systems)
 
 # SETUP:                                                                         
 # 1. Clone repo                                                                                              
