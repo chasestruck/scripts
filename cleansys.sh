@@ -1,13 +1,8 @@
 #!/bin/bash
-
 # Cleansys -- The all-in-one system update command (becuase debian's way is too hard)                                        
-# Copyright (C) 2020 Chase Struck
 
-# Treat this file as free software; you may inspect, change, distribute and even resell this program
-# provided that both the above Copyright notice and this notice are preserved.
-# Hovever, this file is provided "as is" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.  
-
-# Important -- This script only works on distros that use apt (generally only debian-based systems)
+# Any Copyright is dedicated to the Public Domain.
+# http://creativecommons.org/publicdomain/zero/1.0/ 
 
 # SETUP:                                                                         
 # 1. Clone repo                                                                                              
