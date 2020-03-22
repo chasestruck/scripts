@@ -1,5 +1,6 @@
 #!/bin/bash
-# Cleansys -- Allows for whole system updates with one command rather than 4                                       
+# Update system repos and apply updates in 1 command rather than 4
+# Usage: sudo system-update.sh 
 
 # Any Copyright is dedicated to the Public Domain.
 # http://creativecommons.org/publicdomain/zero/1.0/ 
